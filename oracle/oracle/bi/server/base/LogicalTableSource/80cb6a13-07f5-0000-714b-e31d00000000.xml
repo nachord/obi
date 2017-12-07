@@ -51,7 +51,8 @@
 <ColumnMapping>
 <LogicalColumnExpr mdsid="m00000007-01f4-0000-9da3-5b0d00000000" name="LogicalColumnExpr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["SampleApp Lite"."D0 Time"."Per Name Q"]]></ExprTextDesc>
+
+<ExprTextDesc><![CDATA["SampleApp Lite"."D0 Time"."Per Name Quarter"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000007-01f4-0000-9da3-5b0d00000000-m80cb6818-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6814-07f3-0000-714b-e31d00000000.xml#m80cb6818-07d6-0000-714b-e31d00000000"/>
 </ObjectRefList>
