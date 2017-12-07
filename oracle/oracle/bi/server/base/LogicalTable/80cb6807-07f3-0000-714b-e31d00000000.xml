@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LogicalTable mdsid="m80cb6807-07f3-0000-714b-e31d00000000" name="D1 Products" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" x="538" y="388" subjectAreaRef="/oracle/bi/server/base/BusinessModel/80cb6802-07d0-0000-714b-e31d00000000.xml#m80cb6802-07d0-0000-714b-e31d00000000">
+<Description><![CDATA[This logical table maps to the physical Products Dimension table with various attributes like Product Name, Brand, Type, LOBr and so on.]]></Description>
+<LogicalColumn mdsid="m80cb6808-07d6-0000-714b-e31d00000000" name="Product Number" isWriteable="false">
+<Description><![CDATA[Product Key is an integer that uniquely identifies each record in the Product dimension table.]]></Description>
+<AttrDefn mdsid="m80cb6956-0f3c-0000-714b-e31d00000000" name="AD_3900:428441269424109">
+<Expr mdsid="m00000001-01f4-0000-766b-731200000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Prod_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000001-01f4-0000-766b-731200000000-m80ca654d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654d-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb6809-07d6-0000-714b-e31d00000000" name="Product" isWriteable="false" customSortOrderRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb6812-07d6-0000-714b-e31d00000000" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb6808-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Returns the product description from the Product dimension. This column is logically sorted by BIEE server according to the Product Sequence column value, and is filtered by BIEE server using the Product Number column value. Naturally drills into Office Column.]]></Description>
+<AttrDefn mdsid="m80cb6957-0f3c-0000-714b-e31d00000000" name="AD_3900:428451269424109">
+<Expr mdsid="m00000002-01f4-0000-006c-ed8c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Prod_Dsc"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000002-01f4-0000-006c-ed8c00000000-m80ca654c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654c-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680a-07d6-0000-714b-e31d00000000" name="Product Type" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb680b-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Returns the Product Type description from the Product dimension. This column is logically filtered by BIEE server using the Product Type Key column value.  Naturally drills into Product Column.]]></Description>
+<AttrDefn mdsid="m80cb6958-0f3c-0000-714b-e31d00000000" name="AD_3900:428461269424109">
+<Expr mdsid="m00000003-01f4-0000-aa5f-785c00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Type"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000003-01f4-0000-aa5f-785c00000000-m80ca6550-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca6550-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680b-07d6-0000-714b-e31d00000000" name="Product Type Key" isWriteable="false">
+<Description><![CDATA[Physical surrogate key for the Product Type objects.]]></Description>
+<AttrDefn mdsid="m80cb6959-0f3c-0000-714b-e31d00000000" name="AD_3900:428471269424109">
+<Expr mdsid="m00000004-01f4-0000-0fb2-fb6e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Type_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000004-01f4-0000-0fb2-fb6e00000000-m80cb2aa0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2aa0-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680c-07d6-0000-714b-e31d00000000" name="LOB" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb680d-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Returns the Product LOB description from the Product dimension. This column is logically filtered by BIEE server using the Product LOB Key column value. Naturally drills into Product Type Column.]]></Description>
+<AttrDefn mdsid="m80cb695a-0f3c-0000-714b-e31d00000000" name="AD_3900:428481269424109">
+<Expr mdsid="m00000005-01f4-0000-8381-904500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."LOB"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000005-01f4-0000-8381-904500000000-m80ca654b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654b-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680d-07d6-0000-714b-e31d00000000" name="LOB Key" isWriteable="false">
+<Description><![CDATA[Physical surrogate key for the LOB objects.]]></Description>
+<AttrDefn mdsid="m80cb695b-0f3c-0000-714b-e31d00000000" name="AD_3900:428491269424109">
+<Expr mdsid="m00000006-01f4-0000-4901-ae2e00000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."LOB_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000006-01f4-0000-4901-ae2e00000000-m80cb2aa4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2aa4-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680e-07d6-0000-714b-e31d00000000" name="Brand" isWriteable="false" descriptorIDRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb680f-07d6-0000-714b-e31d00000000">
+<Description><![CDATA[Returns the Product's brand description from the Product dimension. This column is logically filtered by BIEE server using the Brand Key column value. Naturally drills into LOB Column.]]></Description>
+<AttrDefn mdsid="m80cb695c-0f3c-0000-714b-e31d00000000" name="AD_3900:428501269424109">
+<Expr mdsid="m00000007-01f4-0000-81e9-812100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Brand"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000007-01f4-0000-81e9-812100000000-m80ca6548-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca6548-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb680f-07d6-0000-714b-e31d00000000" name="Brand Key" isWriteable="false">
+<Description><![CDATA[Surrogate key for the Brand objects.]]></Description>
+<AttrDefn mdsid="m80cb695d-0f3c-0000-714b-e31d00000000" name="AD_3900:428511269424109">
+<Expr mdsid="m00000008-01f4-0000-4768-5d5100000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Brand_Key"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000008-01f4-0000-4768-5d5100000000-m80cb2999-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2999-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalColumn mdsid="m80cb6812-07d6-0000-714b-e31d00000000" name="Product Sequence" isWriteable="false">
+<Description><![CDATA[Returns the product's sequence number from the Product Dimension. It is used to logically sort the Product object values]]></Description>
+<AttrDefn mdsid="m80cb6960-0f3c-0000-714b-e31d00000000" name="AD_3900:428541269424109">
+<Expr mdsid="m00000009-01f4-0000-c265-8f2500000000" name="Expr">
+<ExprText><![CDATA["%1"]]></ExprText>
+<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Sequence"]]></ExprTextDesc>
+<ObjectRefList>
+<RefObject refId="m00000009-01f4-0000-c265-8f2500000000-m80ca654e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654e-0bbb-0000-714b-e31d00000000"/>
+</ObjectRefList>
+</Expr>
+</AttrDefn>
+</LogicalColumn>
+<LogicalKey mdsid="m80cb694f-07d8-0000-714b-e31d00000000" name="Dim 05 Product_Key" isPrimary="true">
+<RefColumns>
+<RefLogicalColumn refId="m80cb694f-07d8-0000-714b-e31d00000000-m80cb6808-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb6807-07f3-0000-714b-e31d00000000.xml#m80cb6808-07d6-0000-714b-e31d00000000"/>
+</RefColumns>
+</LogicalKey>
+<RefTableSources>
+<RefLogicalTableSource refId="m80cb6807-07f3-0000-714b-e31d00000000-m80cb6a12-07f5-0000-714b-e31d00000000" logicalTableSourceRef="/oracle/bi/server/base/LogicalTableSource/80cb6a12-07f5-0000-714b-e31d00000000.xml#m80cb6a12-07f5-0000-714b-e31d00000000"/>
+</RefTableSources>
+</LogicalTable>
