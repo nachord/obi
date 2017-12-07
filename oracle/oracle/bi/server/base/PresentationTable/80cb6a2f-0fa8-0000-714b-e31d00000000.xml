@@ -11,6 +11,7 @@ Stores the date information in the format MM/DD/YYYY.  Eg :- 11/12/2006]]></Desc
 <PresentationColumn mdsid="m80cb6c69-0faa-0000-714b-e31d00000000" name="Per Name Month" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb6814-07f3-0000-714b-e31d00000000.xml#m80cb6817-07d6-0000-714b-e31d00000000">
 <Description><![CDATA[Per Name Month. Stores the month information in the format YYYY / MM. Eg :- 2006 / 11]]></Description>
 </PresentationColumn>
+
 <PresentationColumn mdsid="m80cb6c6a-0faa-0000-714b-e31d00000000" name="Per Name Quarter" hasDispName="false" hasDispDescription="false" overrideLogicalName="false" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb6814-07f3-0000-714b-e31d00000000.xml#m80cb6818-07d6-0000-714b-e31d00000000">
 <Description><![CDATA[Per Name Qtr. Stores the Quarter information in the format YYYY QQuarterNumber. Eg :- 2005 Q3]]></Description>
 <Alias name="Per Name Qtr"/>
