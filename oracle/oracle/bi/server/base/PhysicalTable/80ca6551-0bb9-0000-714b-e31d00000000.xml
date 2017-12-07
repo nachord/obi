@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PhysicalTable mdsid="m80ca6551-0bb9-0000-714b-e31d00000000" name="SAMP_TIME_DAY_D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="none" x="281" y="645" uri="VALUEOF(BI_EE_HOME)/sample/SampleAppFiles/Data/SAMP_TIME_DAY_D.xml" maxConn="0" containerRef="/oracle/bi/server/base/Database/80ca62c4-0bcf-0000-714b-e31d00000000.xml#m80ca62c4-0bcf-0000-714b-e31d00000000">
+<Description><![CDATA[Time (Day Grain) Dimension Physical table. This table is not directly used by the logical model, it is accessed via the aliases setup in the physical diagram. The database is of XML type, the setup of this physical table leverages the value of an RPD variable : BI_EE_HOME (see the XML tab in this dialog box). This variable needs to be correctly set in order for the server to connect to the files.]]></Description>
+<PhysicalColumn mdsid="m80ca655a-0bbb-0000-714b-e31d00000000" name="Calendar_Date" dataType="DATE" extName="//Table/SAMP_TIME_DAY_D/CALENDAR_DATE" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca655b-0bbb-0000-714b-e31d00000000" name="Day_Of_Month" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Day_Of_Month" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca655c-0bbb-0000-714b-e31d00000000" name="Day_Of_Week" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Day_Of_Week" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca655d-0bbb-0000-714b-e31d00000000" name="Day_Of_Year" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Day_Of_Year" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca6566-0bbb-0000-714b-e31d00000000" name="Julian_Day_Num" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Julian_Day_Num" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca6567-0bbb-0000-714b-e31d00000000" name="Julian_Month_Num" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Julian_Month_Num" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca6568-0bbb-0000-714b-e31d00000000" name="Julian_Qtr_Num" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Julian_Qtr_Num" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca6569-0bbb-0000-714b-e31d00000000" name="Julian_Week_Num" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Julian_Week_Num" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca656b-0bbb-0000-714b-e31d00000000" name="Per_Name_Half" dataType="VARCHAR" precision="8" extName="//Table/SAMP_TIME_DAY_D/Per_Name_Half" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca656c-0bbb-0000-714b-e31d00000000" name="Per_Name_Month" dataType="VARCHAR" precision="9" extName="//Table/SAMP_TIME_DAY_D/Per_Name_Month" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca656d-0bbb-0000-714b-e31d00000000" name="Per_Name_Qtr" dataType="VARCHAR" precision="7" extName="//Table/SAMP_TIME_DAY_D/Per_Name_Qtr" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca656e-0bbb-0000-714b-e31d00000000" name="Per_Name_Week" dataType="VARCHAR" precision="12" extName="//Table/SAMP_TIME_DAY_D/Per_Name_Week" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca656f-0bbb-0000-714b-e31d00000000" name="Per_Name_Year" dataType="VARCHAR" precision="4" extName="//Table/SAMP_TIME_DAY_D/Per_Name_Year" specialType="none">
+</PhysicalColumn>
+<PhysicalColumn mdsid="m80ca6570-0bbb-0000-714b-e31d00000000" name="Day_Key" dataType="INT" extName="//Table/SAMP_TIME_DAY_D/Day_Key" specialType="none">
+</PhysicalColumn>
+<PhysicalKey mdsid="m80ca65ba-0bc0-0000-714b-e31d00000000" name="Row_Wid">
+<RefColumns>
+<RefColumn refId="m80ca65ba-0bc0-0000-714b-e31d00000000-m80ca6570-0bbb-0000-714b-e31d00000000" columnRef="/oracle/bi/server/base/PhysicalTable/80ca6551-0bb9-0000-714b-e31d00000000.xml#m80ca6570-0bbb-0000-714b-e31d00000000"/>
+</RefColumns>
+</PhysicalKey>
+</PhysicalTable>
