@@ -93,6 +93,7 @@
 </LogicalKey>
 <RefLogicalColumns>
 <RefLogicalColumn refId="m80cb6901-07e9-0000-714b-e31d00000000-m80cb6815-07d6-0000-714b-e31d00000000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb6814-07f3-0000-714b-e31d00000000.xml#m80cb6815-07d6-0000-714b-e31d00000000"/>
+<RefLogicalColumn refId="m80cb6901-07e9-0000-714b-e31d00000000-m40000003-c209-168a-8a27-0a00020f0000" logicalColumnRef="/oracle/bi/server/base/LogicalTable/80cb6814-07f3-0000-714b-e31d00000000.xml#m40000003-c209-168a-8a27-0a00020f0000"/>
 </RefLogicalColumns>
 <AbsoluteSequenceNumber>
 </AbsoluteSequenceNumber>
