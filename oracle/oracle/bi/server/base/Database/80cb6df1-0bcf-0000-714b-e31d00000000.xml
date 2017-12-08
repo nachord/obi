@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Database mdsid="m80cb6df1-0bcf-0000-714b-e31d00000000" name="System DB (Update me)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="Oracle11g" dbName="Oracle 11g">
+<Database mdsid="m80cb6df1-0bcf-0000-714b-e31d00000000" name=". - System DB (Update me)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" type="Oracle11g" dbName="Oracle 11g">
 <Description><![CDATA[This database is only used for Scorecard Annotations feature. It is not mandatory for SampleAppLite to work
 It needs to be configured to point to the ORCL Database created by the installation process. Please update the connection pool with the correct host name and credentials.]]></Description>
 <Feature name="LEFT_OUTER_JOIN_SUPPORTED" value="true"/>

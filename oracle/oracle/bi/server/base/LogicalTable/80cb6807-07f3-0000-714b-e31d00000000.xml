@@ -6,7 +6,7 @@
 <AttrDefn mdsid="m80cb6956-0f3c-0000-714b-e31d00000000" name="AD_3900:428441269424109">
 <Expr mdsid="m00000001-01f4-0000-766b-731200000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Prod_Key"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Prod_Key"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000001-01f4-0000-766b-731200000000-m80ca654d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654d-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -18,7 +18,7 @@
 <AttrDefn mdsid="m80cb6957-0f3c-0000-714b-e31d00000000" name="AD_3900:428451269424109">
 <Expr mdsid="m00000002-01f4-0000-006c-ed8c00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Prod_Dsc"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Prod_Dsc"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000002-01f4-0000-006c-ed8c00000000-m80ca654c-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654c-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -30,7 +30,7 @@
 <AttrDefn mdsid="m80cb6958-0f3c-0000-714b-e31d00000000" name="AD_3900:428461269424109">
 <Expr mdsid="m00000003-01f4-0000-aa5f-785c00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Type"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Type"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000003-01f4-0000-aa5f-785c00000000-m80ca6550-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca6550-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -42,7 +42,7 @@
 <AttrDefn mdsid="m80cb6959-0f3c-0000-714b-e31d00000000" name="AD_3900:428471269424109">
 <Expr mdsid="m00000004-01f4-0000-0fb2-fb6e00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Type_Key"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Type_Key"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000004-01f4-0000-0fb2-fb6e00000000-m80cb2aa0-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2aa0-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -54,7 +54,7 @@
 <AttrDefn mdsid="m80cb695a-0f3c-0000-714b-e31d00000000" name="AD_3900:428481269424109">
 <Expr mdsid="m00000005-01f4-0000-8381-904500000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."LOB"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."LOB"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000005-01f4-0000-8381-904500000000-m80ca654b-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654b-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -66,7 +66,7 @@
 <AttrDefn mdsid="m80cb695b-0f3c-0000-714b-e31d00000000" name="AD_3900:428491269424109">
 <Expr mdsid="m00000006-01f4-0000-4901-ae2e00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."LOB_Key"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."LOB_Key"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000006-01f4-0000-4901-ae2e00000000-m80cb2aa4-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2aa4-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -78,7 +78,7 @@
 <AttrDefn mdsid="m80cb695c-0f3c-0000-714b-e31d00000000" name="AD_3900:428501269424109">
 <Expr mdsid="m00000007-01f4-0000-81e9-812100000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Brand"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Brand"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000007-01f4-0000-81e9-812100000000-m80ca6548-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca6548-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -90,7 +90,7 @@
 <AttrDefn mdsid="m80cb695d-0f3c-0000-714b-e31d00000000" name="AD_3900:428511269424109">
 <Expr mdsid="m00000008-01f4-0000-4768-5d5100000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Brand_Key"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Brand_Key"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000008-01f4-0000-4768-5d5100000000-m80cb2999-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80cb2999-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -102,7 +102,7 @@
 <AttrDefn mdsid="m80cb6960-0f3c-0000-714b-e31d00000000" name="AD_3900:428541269424109">
 <Expr mdsid="m00000009-01f4-0000-c265-8f2500000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."D10 Product"."Sequence"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."D10 Product"."Sequence"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000009-01f4-0000-c265-8f2500000000-m80ca654e-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca6547-0bb9-0000-714b-e31d00000000.xml#m80ca654e-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
