@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Group mdsid="m00000000-0000-0000-0000-000000010101" name="1C387479BAF48862CC8DD25D76C4AD5FAAF17B8B9F9762DF3A6841967B49ACFB 008657C1F0ADE796D7B4C035B66178F447FE473E5F9F47E9467BA0D30991268E" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" logStatisticsStatus="disable" guid=".. - BIAuthor" displayName="BI Author Role">
+<Group mdsid="m00000000-0000-0000-0000-000000010101" name="A06C3E0FD636689159F6B80E41E469A6D6C8E7B81BCD46B74EBA60E838F35D5509EF1FFC2793C7A55F558163A4D082A6 1EBFAF0C77FB7DF6CACE5F60DC99C4F0EE1C1C17611BA6F4D12E922818685EBF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oracle.com/obis/repository" logStatisticsStatus="disable" guid=". - .. - BIAuthor" displayName="BI Author Role">
 <RefChildGroups>
 <RefGroup refId="m00000000-0000-0000-0000-000000010101-m00000000-0000-0000-0000-000000000101" groupRef="/oracle/bi/server/base/Group/00000000-0000-0000-0000-000000000101.xml#m00000000-0000-0000-0000-000000000101"/>
 </RefChildGroups>
