@@ -7,7 +7,7 @@ All the columns in this table are physically mapped to columns in the Revenue fa
 <AttrDefn mdsid="m80cb69bf-0f3c-0000-714b-e31d00000000" name="AD_3900:429491269424109">
 <Expr mdsid="m00000001-01f4-0000-3671-15e600000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Number"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Number"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000001-01f4-0000-3671-15e600000000-m80ca651f-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80ca651f-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -19,7 +19,7 @@ All the columns in this table are physically mapped to columns in the Revenue fa
 <AttrDefn mdsid="m80cb69c0-0f3c-0000-714b-e31d00000000" name="AD_3900:429501269424109">
 <Expr mdsid="m00000002-01f4-0000-2150-fe6200000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Status"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Status"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000002-01f4-0000-2150-fe6200000000-m80caa95d-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80caa95d-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -31,7 +31,7 @@ All the columns in this table are physically mapped to columns in the Revenue fa
 <AttrDefn mdsid="m80cb69c1-0f3c-0000-714b-e31d00000000" name="AD_3900:429511269424109">
 <Expr mdsid="m00000003-01f4-0000-1fba-93eb00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Type"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Type"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000003-01f4-0000-1fba-93eb00000000-m80cb2ad3-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80cb2ad3-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -50,10 +50,10 @@ else 'Over 5k'
 end
 
 ]]></ExprText>
-<ExprTextDesc><![CDATA[case when  "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <1000 then 'Below 1k'
-when  "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <2000 then 'Between 1k and 2k'
-when  "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <3000 then 'Between 2k and 3k'
-when  "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <5000 then 'Between 3k and 5k'
+<ExprTextDesc><![CDATA[case when  ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <1000 then 'Below 1k'
+when  ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <2000 then 'Between 1k and 2k'
+when  ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <3000 then 'Between 2k and 3k'
+when  ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Revenue" <5000 then 'Between 3k and 5k'
 else 'Over 5k'
 end
 
@@ -66,12 +66,12 @@ end
 </LogicalColumn>
 <LogicalColumn mdsid="m80cb687b-07d6-0000-714b-e31d00000000" name="Order to Bill Days" isDerived="true" isWriteable="false">
 <Description><![CDATA[This is a logical calculation object that computes for ech order, the number of days between order date and bill date.]]></Description>
-<Expr mdsid="m00000005-01f4-0000-87a4-ed9600000000" name="Expr">
+<Expr mdsid="m00000005-01f4-0000-272a-fceb00000000" name="Expr">
 <ExprText><![CDATA[ TIMESTAMPDIFF( SQL_TSI_DAY , "%1", "%2")]]></ExprText>
-<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_DAY , "SampleApp Lite"."D3 Orders (Facts Attributes)"."Order Date", "SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[ TIMESTAMPDIFF( SQL_TSI_DAY , ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Order Date", ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000005-01f4-0000-87a4-ed9600000000-m80cb6880-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6880-07d6-0000-714b-e31d00000000"/>
-<RefObject refId="m00000005-01f4-0000-87a4-ed9600000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-272a-fceb00000000-m80cb6880-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6880-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000005-01f4-0000-272a-fceb00000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
 </ObjectRefList>
 </Expr>
 <AttrDefn mdsid="m80cb69c5-0f3c-0000-714b-e31d00000000" name="AD_3900:429551269424109">
@@ -83,11 +83,11 @@ end
 </LogicalColumn>
 <LogicalColumn mdsid="m80cb687c-07d6-0000-714b-e31d00000000" name="Order to Bill Days Bin" isDerived="true" isWriteable="false">
 <Description><![CDATA[This is a logical calculation object that buckets each order into a group, based on the number of days between order date and bill date. The calculation is done on the fly by BIEE server.]]></Description>
-<Expr mdsid="m00000007-01f4-0000-cd38-4f1800000000" name="Expr">
+<Expr mdsid="m00000007-01f4-0000-fb91-9c0f00000000" name="Expr">
 <ExprText><![CDATA[ CASE  WHEN "%1" < 10 THEN 'Below 10' WHEN "%1" < 15 THEN 'Between 10 and 15' WHEN "%1" < 20 THEN 'Between 15 and 20' ELSE 'Over 20' END ]]></ExprText>
-<ExprTextDesc><![CDATA[ CASE  WHEN "SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 10 THEN 'Below 10' WHEN "SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 15 THEN 'Between 10 and 15' WHEN "SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 20 THEN 'Between 15 and 20' ELSE 'Over 20' END ]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[ CASE  WHEN ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 10 THEN 'Below 10' WHEN ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 15 THEN 'Between 10 and 15' WHEN ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Order to Bill Days" < 20 THEN 'Between 15 and 20' ELSE 'Over 20' END ]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m00000007-01f4-0000-cd38-4f1800000000-m80cb687b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb687b-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m00000007-01f4-0000-fb91-9c0f00000000-m80cb687b-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb687b-07d6-0000-714b-e31d00000000"/>
 </ObjectRefList>
 </Expr>
 <AttrDefn mdsid="m80cb69c6-0f3c-0000-714b-e31d00000000" name="AD_3900:429561269424109">
@@ -102,7 +102,7 @@ end
 <AttrDefn mdsid="m80cb69ca-0f3c-0000-714b-e31d00000000" name="AD_3900:429601269424109">
 <Expr mdsid="m00000009-01f4-0000-a3dc-869e00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m00000009-01f4-0000-a3dc-869e00000000-m80ca6521-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80ca6521-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -114,7 +114,7 @@ end
 <AttrDefn mdsid="m80cb69cb-0f3c-0000-714b-e31d00000000" name="AD_3900:429611269424109">
 <Expr mdsid="m0000000a-01f4-0000-be5f-83cf00000000" name="Expr">
 <ExprText><![CDATA[Month( "%1")]]></ExprText>
-<ExprTextDesc><![CDATA[Month( "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt")]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[Month( ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt")]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m0000000a-01f4-0000-be5f-83cf00000000-m80ca6521-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80ca6521-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -126,7 +126,7 @@ end
 <AttrDefn mdsid="m80cb69cc-0f3c-0000-714b-e31d00000000" name="AD_3900:429621269424109">
 <Expr mdsid="m0000000b-01f4-0000-466c-f1a000000000" name="Expr">
 <ExprText><![CDATA[Year( "%1")]]></ExprText>
-<ExprTextDesc><![CDATA[Year( "Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt")]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[Year( ". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Order_Day_Dt")]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m0000000b-01f4-0000-466c-f1a000000000-m80ca6521-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80ca6521-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -138,7 +138,7 @@ end
 <AttrDefn mdsid="m80cb69cd-0f3c-0000-714b-e31d00000000" name="AD_3900:429631269424109">
 <Expr mdsid="m0000000c-01f4-0000-f4fe-20fd00000000" name="Expr">
 <ExprText><![CDATA["%1"]]></ExprText>
-<ExprTextDesc><![CDATA["Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Bill_Day_Dt"]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[". - Sample App Lite Data"."".""."F10 Revenue Facts (Order grain)"."Bill_Day_Dt"]]></ExprTextDesc>
 <ObjectRefList>
 <RefObject refId="m0000000c-01f4-0000-f4fe-20fd00000000-m80ca6520-0bbb-0000-714b-e31d00000000" objectTypeId="3003" objectRef="/oracle/bi/server/base/PhysicalTable/80ca651b-0bb9-0000-714b-e31d00000000.xml#m80ca6520-0bbb-0000-714b-e31d00000000"/>
 </ObjectRefList>
@@ -147,11 +147,11 @@ end
 </LogicalColumn>
 <LogicalColumn mdsid="m80cb6884-07d6-0000-714b-e31d00000000" name="Billed Month" isDerived="true" isWriteable="false">
 <Description><![CDATA[Extracts the month out of the the Oder Bill Date value from the Revenue Facts table. This information is extracted by BIEE server.]]></Description>
-<Expr mdsid="m0000000d-01f4-0000-6ee5-b65200000000" name="Expr">
+<Expr mdsid="m0000000d-01f4-0000-4b6e-45df00000000" name="Expr">
 <ExprText><![CDATA[ EXTRACT( MONTH  FROM "%1")]]></ExprText>
-<ExprTextDesc><![CDATA[ EXTRACT( MONTH  FROM "SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[ EXTRACT( MONTH  FROM ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000000d-01f4-0000-6ee5-b65200000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000d-01f4-0000-4b6e-45df00000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
 </ObjectRefList>
 </Expr>
 <AttrDefn mdsid="m80cb69ce-0f3c-0000-714b-e31d00000000" name="AD_3900:429641269424109">
@@ -163,11 +163,11 @@ end
 </LogicalColumn>
 <LogicalColumn mdsid="m80cb6885-07d6-0000-714b-e31d00000000" name="Billed Year" isDerived="true" isWriteable="false">
 <Description><![CDATA[Extracts the year out of the the Oder Bill Date value from the Revenue Facts table. This information is extracted by BIEE server.]]></Description>
-<Expr mdsid="m0000000f-01f4-0000-0462-5d2e00000000" name="Expr">
+<Expr mdsid="m0000000f-01f4-0000-71d2-d79100000000" name="Expr">
 <ExprText><![CDATA[ EXTRACT( YEAR  FROM "%1")]]></ExprText>
-<ExprTextDesc><![CDATA[ EXTRACT( YEAR  FROM "SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
+<ExprTextDesc><![CDATA[ EXTRACT( YEAR  FROM ". - SampleApp Lite"."D3 Orders (Facts Attributes)"."Billed Date")]]></ExprTextDesc>
 <ObjectRefList>
-<RefObject refId="m0000000f-01f4-0000-0462-5d2e00000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
+<RefObject refId="m0000000f-01f4-0000-71d2-d79100000000-m80cb6883-07d6-0000-714b-e31d00000000" objectTypeId="2006" objectRef="/oracle/bi/server/base/LogicalTable/80cb6873-07f3-0000-714b-e31d00000000.xml#m80cb6883-07d6-0000-714b-e31d00000000"/>
 </ObjectRefList>
 </Expr>
 <AttrDefn mdsid="m80cb69cf-0f3c-0000-714b-e31d00000000" name="AD_3900:429651269424109">
